@@ -30,7 +30,15 @@ window.PROJECTS = [
     title: "At the End of the World",
     venue: "Round House Theater",
     year: "2026",
-    credits: [],
+    credits: [
+      { role: "Written by", name: "Morgan Gould" },
+      { role: "Directed by", name: "Scout Amakali" },
+      { role: "Lighting Design", name: "Toby McDonald" },
+      { role: "Scenic and Props Design", name: "Alexander Weiss" },
+      { role: "Projections Design", name: "Ana Ewachiw" },
+      { role: "Costume Design", name: "Stella Theisman" },
+      { role: "Sound Design", name: "Kiran Almazor" }
+    ],
     cover: "assets/images/projects/ateotw/cover.jpg",
     images: [
       "assets/images/projects/ateotw/cover.jpg",
