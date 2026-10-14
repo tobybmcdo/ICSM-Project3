@@ -8,5 +8,7 @@
 
 \-When adding a dash in text, always use the ascii character
 
+\-Make all future changes in the main branch
+
 
 
