@@ -19,4 +19,13 @@
     ]
   }
 */
-window.PROJECTS = [];
+window.PROJECTS = [
+  { slug: "project-01", title: "Project 01", cover: "", images: [] },
+  { slug: "project-02", title: "Project 02", cover: "", images: [] },
+  { slug: "project-03", title: "Project 03", cover: "", images: [] },
+  { slug: "project-04", title: "Project 04", cover: "", images: [] },
+  { slug: "project-05", title: "Project 05", cover: "", images: [] },
+  { slug: "project-06", title: "Project 06", cover: "", images: [] },
+  { slug: "project-07", title: "Project 07", cover: "", images: [] },
+  { slug: "project-08", title: "Project 08", cover: "", images: [] }
+];

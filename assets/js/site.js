@@ -2,6 +2,18 @@
   const config = window.SITE_CONFIG || {};
   const projects = window.PROJECTS || [];
 
+  const header = document.querySelector(".site-header");
+  if (header) {
+    let compact = false;
+    const updateHeader = () => {
+      if (!compact && window.scrollY > 96) compact = true;
+      else if (compact && window.scrollY < 24) compact = false;
+      header.classList.toggle("is-compact", compact);
+    };
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    updateHeader();
+  }
+
   document.querySelectorAll("[data-footer-links]").forEach((footer) => {
     const links = [];
     if (config.socialUrl) {
@@ -17,7 +29,7 @@
   if (grid) {
     grid.innerHTML = projects.map((project) => `
       <a class="project-card" href="project.html?id=${encodeURIComponent(project.slug)}" aria-label="${escapeAttribute(project.title)}">
-        <div class="project-image"><img src="${escapeAttribute(project.cover)}" alt="${escapeAttribute(project.title)}" loading="lazy"></div>
+        <div class="project-image${project.cover ? "" : " project-placeholder"}">${project.cover ? `<img src="${escapeAttribute(project.cover)}" alt="${escapeAttribute(project.title)}" loading="lazy">` : ""}</div>
         <div class="project-meta"><h2>${escapeHtml(project.title)}</h2></div>
       </a>`).join("");
   }
