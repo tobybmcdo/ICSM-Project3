@@ -1,9 +1,8 @@
-# Twentieth Century font
+Twentieth Century font files for body text:
 
-When you have a licensed web font file, place the regular font file here and name it:
+- Light: weight 300
+- Medium: weight 500
+- Semibold: weight 600
+- Bold: weight 700
 
-```text
-twentieth-century.woff2
-```
-
-The site stylesheet already points to this location. If your copy is only available as TTF or OTF, send me the file extension and I can update the stylesheet path and format declaration.
+The site loads these files from site.css. Headings, the title, and navigation continue to use Figtree.

@@ -1,1 +1,1 @@
-Place your resume PDF in this folder when it is ready, then add its link on `about.html`.
+Place your resume PDF in this folder as `resume.pdf`. The Resume button on `about.html` opens it in a new browser tab.
