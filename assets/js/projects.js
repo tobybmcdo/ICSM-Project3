@@ -34,10 +34,11 @@ window.PROJECTS = [
       { role: "Written by", name: "Morgan Gould" },
       { role: "Directed by", name: "Scout Amakali" },
       { role: "Lighting Design", name: "Toby McDonald" },
-      { role: "Scenic and Props Design", name: "Alexander Weiss" },
+      { role: "Scenic & Props Design", name: "Alexander Weiss" },
       { role: "Projections Design", name: "Ana Ewachiw" },
       { role: "Costume Design", name: "Stella Theisman" },
-      { role: "Sound Design", name: "Kiran Almazor" }
+      { role: "Sound Design", name: "Kiran Almazor" },
+      { role: "Photos", name: "Danisha Crosby" }
     ],
     cover: "assets/images/projects/ateotw/cover.jpg",
     images: [

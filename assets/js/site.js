@@ -25,7 +25,7 @@
       links.push(`<a class="icon-link" href="${escapeAttribute(config.socialUrl)}" target="_blank" rel="noreferrer" aria-label="${escapeAttribute(config.socialLabel || "Social media")}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-dot" cx="17.5" cy="6.7" r=".7"/></svg></a>`);
     }
     if (config.email) {
-      links.push(`<a class="icon-link" href="mailto:${escapeAttribute(config.email)}" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1"/><path d="m4 7 8 6 8-6"/></svg></a>`);
+      links.push(`<a class="footer-email" href="mailto:${escapeAttribute(config.email)}">${escapeAttribute(config.email)}</a>`);
     }
     footer.innerHTML = links.join("");
   });

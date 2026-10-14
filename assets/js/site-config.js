@@ -4,5 +4,5 @@ window.SITE_CONFIG = {
   title: "Toby McDonald Lighting Design",
   socialLabel: "Instagram",
   socialUrl: "",
-  email: ""
+  email: "tobybmcdo@gmail.com"
 };
