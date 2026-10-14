@@ -3,14 +3,19 @@
   assets/images/projects/<project-slug>/
   Use cover.jpg for the gallery thumbnail, followed by 01.jpg, 02.jpg, etc.
 
-  Example entry (replace the sample values with your production details):
+  To add a production, copy this entry into window.PROJECTS and replace its
+  sample values. Venue and year appear under the show title. Add one credits
+  item per team member; each role/name pair appears below the carousel.
+  Empty venue, year, or credits fields are hidden on the page.
   {
     slug: "sample-production",
     title: "Show title",
-    year: "Year",
     venue: "Theatre / company",
-    role: "Lighting Designer",
-    description: "A short description of the production.",
+    year: "Year",
+    credits: [
+      { role: "Director", name: "Name" },
+      { role: "Lighting Designer", name: "Toby McDonald" }
+    ],
     cover: "assets/images/projects/sample-production/cover.jpg",
     images: [
       "assets/images/projects/sample-production/cover.jpg",
@@ -23,6 +28,9 @@ window.PROJECTS = [
   {
     slug: "ateotw",
     title: "At the End of the World",
+    venue: "Round House Theater",
+    year: "2026",
+    credits: [],
     cover: "assets/images/projects/ateotw/cover.jpg",
     images: [
       "assets/images/projects/ateotw/cover.jpg",
@@ -31,12 +39,12 @@ window.PROJECTS = [
       )
     ]
   },
-  { slug: "project-01", title: "Project 01", cover: "", images: [] },
-  { slug: "project-02", title: "Project 02", cover: "", images: [] },
-  { slug: "project-03", title: "Project 03", cover: "", images: [] },
-  { slug: "project-04", title: "Project 04", cover: "", images: [] },
-  { slug: "project-05", title: "Project 05", cover: "", images: [] },
-  { slug: "project-06", title: "Project 06", cover: "", images: [] },
-  { slug: "project-07", title: "Project 07", cover: "", images: [] },
-  { slug: "project-08", title: "Project 08", cover: "", images: [] }
+  { slug: "project-01", title: "Project 01", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-02", title: "Project 02", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-03", title: "Project 03", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-04", title: "Project 04", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-05", title: "Project 05", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-06", title: "Project 06", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-07", title: "Project 07", venue: "", year: "", credits: [], cover: "", images: [] },
+  { slug: "project-08", title: "Project 08", venue: "", year: "", credits: [], cover: "", images: [] }
 ];
