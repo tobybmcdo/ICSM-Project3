@@ -20,6 +20,17 @@
   }
 */
 window.PROJECTS = [
+  {
+    slug: "ateotw",
+    title: "At the End of the World",
+    cover: "assets/images/projects/ateotw/cover.jpg",
+    images: [
+      "assets/images/projects/ateotw/cover.jpg",
+      ...Array.from({ length: 14 }, (_, index) =>
+        `assets/images/projects/ateotw/${String(index + 1).padStart(2, "0")}.jpg`
+      )
+    ]
+  },
   { slug: "project-01", title: "Project 01", cover: "", images: [] },
   { slug: "project-02", title: "Project 02", cover: "", images: [] },
   { slug: "project-03", title: "Project 03", cover: "", images: [] },
