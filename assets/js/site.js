@@ -30,6 +30,41 @@
     footer.innerHTML = links.join("");
   });
 
+  const contactForm = document.querySelector(".contact-form");
+  if (contactForm && config.email) {
+    const formNote = contactForm.querySelector("#form-note");
+    const submitButton = contactForm.querySelector(".submit-button");
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const formData = new FormData(contactForm);
+      const values = Object.fromEntries(formData.entries());
+      values._subject = `Website contact from ${String(values.name || "").trim()}`;
+      values._template = "table";
+
+      submitButton.disabled = true;
+      submitButton.setAttribute("aria-label", "Sending message");
+      formNote.textContent = "Sending your message...";
+
+      try {
+        const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(config.email)}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(values)
+        });
+        const result = await response.json();
+        if (!response.ok || !result.success) throw new Error(result.message || "Message could not be sent.");
+
+        contactForm.reset();
+        formNote.textContent = "Your message has been sent. Thank you for getting in touch.";
+      } catch (error) {
+        formNote.textContent = `Your message could not be sent. Please try again later or email ${config.email}.`;
+      } finally {
+        submitButton.disabled = false;
+        submitButton.setAttribute("aria-label", "Send message");
+      }
+    });
+  }
+
   const grid = document.getElementById("project-grid");
   if (grid) {
     grid.innerHTML = projects.map((project) => `

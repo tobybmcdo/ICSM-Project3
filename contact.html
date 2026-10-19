@@ -13,8 +13,8 @@
       <form class="contact-form" aria-describedby="form-note">
         <div class="form-row"><label>Name<input name="name" type="text" autocomplete="name" placeholder="Name" required></label><label>Email<input name="email" type="email" autocomplete="email" placeholder="Email" required></label></div>
         <label>Message<textarea name="message" rows="5" placeholder="Message" required></textarea></label>
-        <p id="form-note" class="form-note">This form is not connected yet.</p>
-        <button class="submit-button" type="button" aria-label="Message delivery not connected" disabled>↗</button>
+        <p id="form-note" class="form-note" role="status" aria-live="polite">Send your message directly from this page.</p>
+        <button class="submit-button" type="submit" aria-label="Send message">↗</button>
       </form>
     </section>
   </main>
