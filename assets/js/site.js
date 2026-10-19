@@ -33,6 +33,17 @@
     footer.innerHTML = links.join("");
   });
 
+  const resumeDialog = document.querySelector(".resume-dialog");
+  const resumeOpenButton = document.querySelector("[data-resume-open]");
+  if (resumeDialog && resumeOpenButton) {
+    const resumeCloseButton = resumeDialog.querySelector("[data-resume-close]");
+    resumeOpenButton.addEventListener("click", () => resumeDialog.showModal());
+    resumeCloseButton.addEventListener("click", () => resumeDialog.close());
+    resumeDialog.addEventListener("click", (event) => {
+      if (event.target === resumeDialog) resumeDialog.close();
+    });
+  }
+
   const contactForm = document.querySelector(".contact-form");
   if (contactForm && config.email) {
     const formNote = contactForm.querySelector("#form-note");

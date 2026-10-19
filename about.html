@@ -14,9 +14,22 @@
       <div class="about-copy">
         <h1>About</h1>
         <p class="bio-placeholder">Toby McDonald is a theatrical lighting designer and BFA Theatrical Production and Design student at Ithaca College. He has designed lighting for Round House Theatre's Teen Performance Company and for productions at Montgomery Blair High School, including <em>Romeo and Juliet</em>, <em>Oliver!</em>, and <em>Caesar and Cleopatra</em>. Toby loves collaborating with directors and crews to help each story find its light.</p>
-        <a class="resume-button" href="assets/files/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button class="resume-button" type="button" data-resume-open>Resume</button>
       </div>
     </section>
+    <dialog class="resume-dialog" aria-labelledby="resume-title">
+      <div class="resume-dialog-panel">
+        <div class="resume-dialog-toolbar">
+          <h2 id="resume-title">Resume</h2>
+          <div class="resume-dialog-actions">
+            <a class="resume-dialog-action" href="assets/files/Toby%20McDonald%20-%20Theatrical%20Resume.pdf" download>Download</a>
+            <a class="resume-dialog-action" href="assets/files/Toby%20McDonald%20-%20Theatrical%20Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+          </div>
+          <button class="resume-dialog-close" type="button" data-resume-close aria-label="Close resume">×</button>
+        </div>
+        <iframe class="resume-frame" src="assets/files/Toby%20McDonald%20-%20Theatrical%20Resume.pdf#view=FitH" title="Toby McDonald's theatrical resume"></iframe>
+      </div>
+    </dialog>
   </main>
   <footer class="site-footer shell"><div class="footer-links" data-footer-links></div></footer>
   <script src="assets/js/site-config.js"></script><script src="assets/js/site.js"></script>
