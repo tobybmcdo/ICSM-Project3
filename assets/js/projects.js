@@ -48,12 +48,79 @@ window.PROJECTS = [
       )
     ]
   },
-  { slug: "project-01", title: "Project 01", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-02", title: "Project 02", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-03", title: "Project 03", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-04", title: "Project 04", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-05", title: "Project 05", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-06", title: "Project 06", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-07", title: "Project 07", venue: "", year: "", credits: [], cover: "", images: [] },
-  { slug: "project-08", title: "Project 08", venue: "", year: "", credits: [], cover: "", images: [] }
+  {
+    slug: "rj",
+    title: "Romeo and Juliet",
+    venue: "",
+    year: "",
+    credits: [
+      { role: "Directed by", name: "Natalie Garcia-Ruiz" },
+      { role: "Lighting Design", name: "Toby McDonald" },
+      { role: "Scenic Design", name: "Sarah Breeden" },
+      { role: "Scenic Design", name: "Rowen Collins" },
+      { role: "Technical Director", name: "Sarah Breeden" }
+    ],
+    cover: "assets/images/projects/rj/cover.jpg",
+    images: [
+      "assets/images/projects/rj/01.jpg",
+      "assets/images/projects/rj/02.jpg",
+      "assets/images/projects/rj/03.jpg",
+      "assets/images/projects/rj/04.jpg",
+      "assets/images/projects/rj/05.jpg"
+    ]
+  },
+  {
+    slug: "psmith",
+    title: "Leave it to Psmith",
+    venue: "",
+    year: "",
+    credits: [],
+    cover: "assets/images/projects/psmith/cover.jpg",
+    images: [
+      "assets/images/projects/psmith/01.jpg",
+      "assets/images/projects/psmith/02.jpg",
+      "assets/images/projects/psmith/03.jpg",
+      "assets/images/projects/psmith/04.jpg",
+      "assets/images/projects/psmith/05.jpg",
+      "assets/images/projects/psmith/06.jpg",
+      "assets/images/projects/psmith/07.jpg",
+
+    ]
+  },
+  {
+    slug: "oliver",
+    title: "Oliver!",
+    venue: "",
+    year: "",
+    credits: [],
+    cover: "assets/images/projects/oliver/cover.jpg",
+    images: [
+      "assets/images/projects/oliver/01.jpg",
+      "assets/images/projects/oliver/02.jpg",
+      "assets/images/projects/oliver/03.jpg"
+    ]
+  },
+  {
+    slug: "cc",
+    title: "Caesar and Cleopatra",
+    venue: "",
+    year: "",
+    credits: [],
+    cover: "assets/images/projects/cc/cover.jpg",
+    images: ["assets/images/projects/cc/01.jpg"]
+  },
+  {
+    slug: "s24",
+    title: "Sankofa 2024",
+    venue: "",
+    year: "",
+    credits: [],
+    cover: "assets/images/projects/s24/cover.jpg",
+    images: [
+      "assets/images/projects/s24/01.jpg",
+      "assets/images/projects/s24/02.jpg",
+      "assets/images/projects/s24/03.jpg",
+      "assets/images/projects/s24/04.jpg"
+    ]
+  },
 ];

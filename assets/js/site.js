@@ -144,6 +144,8 @@
 
     const renderThumbnails = (keepFocus = false) => {
       const visibleCount = Math.min(9, images.length);
+      thumbnails.style.gridTemplateColumns = `repeat(${visibleCount}, minmax(0, 1fr))`;
+      thumbnails.style.width = `min(100%, ${Math.min(810, visibleCount * 90)}px)`;
       const startOffset = -Math.floor(visibleCount / 2);
       const visibleIndices = Array.from({ length: visibleCount }, (_, offset) =>
         (activeIndex + startOffset + offset + images.length) % images.length
