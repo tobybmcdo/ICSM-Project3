@@ -24,6 +24,9 @@
     if (config.socialUrl) {
       links.push(`<a class="icon-link" href="${escapeAttribute(config.socialUrl)}" target="_blank" rel="noreferrer" aria-label="${escapeAttribute(config.socialLabel || "Social media")}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-dot" cx="17.5" cy="6.7" r=".7"/></svg></a>`);
     }
+    if (config.linkedinUrl) {
+      links.push(`<a class="icon-link" href="${escapeAttribute(config.linkedinUrl)}" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true"><path transform="translate(1.8 1.8) scale(.85)" d="M5.2 8.5H2.1V22h3.1V8.5ZM3.65 2A1.8 1.8 0 1 0 3.7 5.6 1.8 1.8 0 0 0 3.65 2ZM22 13.8c0-4.1-2.2-6-5.2-6a4.5 4.5 0 0 0-4.1 2.2V8.5H9.6V22h3.1v-6.7c0-1.8.3-3.6 2.6-3.6s2.3 2.1 2.3 3.7V22H22v-8.2Z"/></svg></a>`);
+    }
     if (config.email) {
       links.push(`<a class="footer-email" href="mailto:${escapeAttribute(config.email)}">${escapeAttribute(config.email)}</a>`);
     }
@@ -55,7 +58,7 @@
         if (!response.ok || !result.success) throw new Error(result.message || "Message could not be sent.");
 
         contactForm.reset();
-        formNote.textContent = "Your message has been sent. Thank you for getting in touch.";
+        formNote.textContent = "Your message has been sent. Thank you for getting in touch!";
       } catch (error) {
         formNote.textContent = `Your message could not be sent. Please try again later or email ${config.email}.`;
       } finally {
