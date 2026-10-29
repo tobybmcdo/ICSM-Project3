@@ -99,6 +99,9 @@
     if (!images.length) return;
     const venueYear = [project.venue, project.year].filter(Boolean).map(escapeHtml).join(" · ");
     const credits = (project.credits || []).filter((credit) => credit && (credit.role || credit.name));
+    const projectIndex = projects.findIndex((item) => item.slug === project.slug);
+    const previousProject = projects[(projectIndex - 1 + projects.length) % projects.length];
+    const nextProject = projects[(projectIndex + 1) % projects.length];
 
     content.innerHTML = `
       <section class="project-heading">
@@ -138,7 +141,17 @@
               ${credit.name ? `<dd>${escapeHtml(credit.name)}</dd>` : ""}
             </div>`).join("")}
           </dl>
-        </section>` : ""}`;
+        </section>` : ""}
+      <nav class="project-pagination" aria-label="Navigate between projects">
+        <a class="project-pagination-link project-pagination-previous" href="project.html?id=${encodeURIComponent(previousProject.slug)}" aria-label="Previous project: ${escapeAttribute(previousProject.title)}">
+          <span class="project-pagination-label"><span aria-hidden="true">←</span> Previous project</span>
+          <span class="project-pagination-title">${escapeHtml(previousProject.title)}</span>
+        </a>
+        <a class="project-pagination-link project-pagination-next" href="project.html?id=${encodeURIComponent(nextProject.slug)}" aria-label="Next project: ${escapeAttribute(nextProject.title)}">
+          <span class="project-pagination-label">Next project <span aria-hidden="true">→</span></span>
+          <span class="project-pagination-title">${escapeHtml(nextProject.title)}</span>
+        </a>
+      </nav>`;
 
     const carousel = content.querySelector(".project-carousel");
     const mainImage = carousel.querySelector(".carousel-image");

@@ -31,7 +31,7 @@ window.PROJECTS = [
     venue: "Round House Theater",
     year: "2026",
     credits: [
-      { role: "Written by", name: "Morgan Gould" },
+      { role: "By", name: "Morgan Gould" },
       { role: "Directed by", name: "Scout Amakali" },
       { role: "Lighting Design", name: "Toby McDonald" },
       { role: "Scenic & Props Design", name: "Alexander Weiss" },
@@ -51,14 +51,14 @@ window.PROJECTS = [
   {
     slug: "rj",
     title: "Romeo and Juliet",
-    venue: "",
-    year: "",
+    venue: "Montgomery Blair High School",
+    year: "2025",
     credits: [
       { role: "Directed by", name: "Natalie Garcia-Ruiz" },
       { role: "Lighting Design", name: "Toby McDonald" },
-      { role: "Scenic Design", name: "Sarah Breeden" },
-      { role: "Scenic Design", name: "Rowen Collins" },
-      { role: "Technical Director", name: "Sarah Breeden" }
+      { role: "Scenic Design", name: "Sarah Breeden, Rowen Collins" },
+      { role: "Technical Director", name: "Sarah Breeden" },
+      { role: "Sound Design", name: "Belinda Moore" }
     ],
     cover: "assets/images/projects/rj/cover.jpg",
     images: [
@@ -72,9 +72,15 @@ window.PROJECTS = [
   {
     slug: "psmith",
     title: "Leave it to Psmith",
-    venue: "",
-    year: "",
-    credits: [],
+    venue: "Montgomery Blair High School",
+    year: "2024",
+    credits: [
+      { role: "Adapted by", name: "John O'Connor" },
+      { role: "Directed by", name: "Kelly Newman O'Connor" },
+      { role: "Lighting Design", name: "Joe Wasserburg, Toby McDonald" },
+      { role: "Scenic Design", name: "Sarah Breeden, Kelly Newman O'Connor" },
+      { role: "Technical Director", name: "Sarah Breeden" }
+    ],
     cover: "assets/images/projects/psmith/cover.jpg",
     images: [
       "assets/images/projects/psmith/01.jpg",
@@ -90,9 +96,14 @@ window.PROJECTS = [
   {
     slug: "oliver",
     title: "Oliver!",
-    venue: "",
-    year: "",
-    credits: [],
+    venue: "Montgomery Blair High School",
+    year: "2024",
+    credits: [
+      { role: "Directed by", name: "Kelly Newman O'Connor" },
+      { role: "Lighting Design", name: "Toby McDonald, Joe Wasserburg" },
+      { role: "Scenic Design", name: "Kelly Newman O'Connor, John O'Connor" },
+      { role: "Technical Director", name: "Sarah Breeden" }
+    ],
     cover: "assets/images/projects/oliver/cover.jpg",
     images: [
       "assets/images/projects/oliver/01.jpg",
@@ -103,18 +114,30 @@ window.PROJECTS = [
   {
     slug: "cc",
     title: "Caesar and Cleopatra",
-    venue: "",
-    year: "",
-    credits: [],
+    venue: "Montgomery Blair High School",
+    year: "2023",
+    credits: [
+      { role: "Directed by", name: "Kelly Newman O'Connor" },
+      { role: "Lighting Design", name: "Toby McDonald" },
+      { role: "Scenic Design", name: "Kelly Newman O'Connor, John O'Connor" },
+      { role: "Technical Director", name: "Scott Wasserburg" }
+    ],
     cover: "assets/images/projects/cc/cover.jpg",
     images: ["assets/images/projects/cc/01.jpg"]
   },
   {
     slug: "s24",
     title: "Sankofa 2024",
-    venue: "",
-    year: "",
-    credits: [],
+    venue: "Montgomery Blair High School",
+    year: "2024",
+    credits: [
+      { role: "Directed by", name: "Summer Roark" },
+      { role: "Lead Choreographer", name: "Serena Laney" },
+      { role: "Written by", name: "Summer Roark" },
+      { role: "Lighting Design", name: "Toby McDonald" },
+      { role: "Scenic Design", name: "Summer Roark, Sarah Breeden" },
+      { role: "Technical Director", name: "Sarah Breeden" }
+    ],
     cover: "assets/images/projects/s24/cover.jpg",
     images: [
       "assets/images/projects/s24/01.jpg",
